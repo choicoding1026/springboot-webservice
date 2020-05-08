@@ -26,11 +26,12 @@ deploy:
       access_key_id: $AWS_ACCESS_KEY
       secret_access_key: $ACCESS_SECRET_KEY
       bucket: a2student8-springboot-webservice   # S3 버킷
-      region: ap-northeast-2                     # S3 버킷 리전
+      region: ap-northeast-2                           # S3 버킷 리전
       skip_cleanup: true
       acl: private
       local_dir: deploy
       wait-until-deployed: true
+
 
 notification:
     email:
